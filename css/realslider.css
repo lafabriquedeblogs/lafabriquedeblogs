@@ -1,0 +1,4 @@
+.slider-content ul li {
+  display: none; }
+  .slider-content ul li::first-child {
+    display: block; }

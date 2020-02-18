@@ -1,0 +1,384 @@
+select
+	display: block
+	padding: 15px 25px
+	border: none
+	border-radius: 0
+	
+	width: 100%
+	appearance: none
+	
+	background: $gris3 url(../img/lire_la_suite.png) right 10px center no-repeat
+	background-size: 27px 23px
+	
+	font-family: $bitter
+	
+.gform_wrapper
+	ul
+		border: none
+		li
+			&::before
+				content: none !important
+#gform_wrapper_1
+	
+	margin: 20px 0 0 0
+	padding: 0 20px
+	
+	&::after
+		content: ""
+		display: table
+		clear: both
+		
+	.gform_title
+		font-size: 13px
+		color: $orange
+		margin: 0 0 5px 0
+		
+	.gform_description
+		display: none !important
+		
+	.gform_body, .gform_heading
+		margin: 0
+	
+	li
+		margin: 0
+		padding: 0
+		
+		input
+			&::-webkit-input-placeholder
+			  color: $gris
+			  
+			&::-moz-placeholder
+			  color: $gris
+			
+			&:-ms-input-placeholder
+			  color: $gris
+			
+			&:-moz-placeholder
+			  color: $gris
+			  	
+	.gfield_label
+		position: absolute !important
+		top: -9999px !important
+		left: -9999px !important
+		
+	
+	.ginput_container_email
+		margin: 0
+	
+	.validation_error
+		display: none !important
+		
+	.gfield_description
+		font-weight: 700
+		font-size: 10px
+		color: $orange
+		padding: 5px 0
+		
+	#input_1_1
+		border: none
+		border-radius: 2px 0 0 2px
+		background-color: $gris4
+		font-family: 'roboto-condensed', sans-serif
+		font-size: 14px
+		color: $gris
+		height: 34px
+		line-height: 34px
+		width: 100%
+		padding-left: 10px
+		padding-right: 10px
+	
+	#field_1_4
+		position: absolute
+		left: -999em
+			
+	.gform_body
+		float: left
+		width: calc( 100% - 45px )	
+	
+	.gform_footer
+		float: right
+		margin: 0
+		border-radius: 0 4px 4px 0
+		background-color: $orange
+		height: 34px
+		width: 45px
+		
+		#gform_submit_button_1
+			display: block
+			width: 45px !important
+			height: 34px
+	
+	#input_1_2
+		padding: 5px 0 0 0
+		
+	#choice_1_2_1
+		float: left
+		margin-right: 10px
+	
+	#label_1_2_1
+		font-size: 11px
+		font-style: italic
+		display: block
+		
+.gform_confirmation_message
+	font-weight: 700
+	font-size: 13px
+	color: $orange
+	padding: 10px 0 0 20px
+
+#gform_wrapper_2
+	.gform_body
+		padding: 20px
+		background-color: $gris6
+	ul
+		margin: 0
+		padding: 0
+		
+		&.gfield_checkbox
+			
+			li
+				padding: 0 0 10px 0
+			
+			input[type="checkbox"]
+				position: absolute !important
+				top: -9999px !important
+				left: -9999px !important
+				
+			label[id*="label_2_4_"], label[id*="label_2_13_"]
+				position: relative
+				padding-left: 30px
+				cursor: pointer
+				
+				&::before
+					content: " "
+					display: block
+					width: 24px
+					height: 24px
+					background-color: $gris3
+					border-radius: 15px
+					border: 4px $gris3 solid
+					position: absolute
+					left: 0
+					top: 0px
+					transition: all 300ms ease-out
+					
+				&.selected
+					font-family: $bitter
+					color: $orange
+					font-style: italic
+					font-size: 16px
+					
+					&::before
+						background-color: #fff
+						border: 4px $orange solid
+						
+	li
+		padding: 0 0 10px 0
+		
+		input
+			&::-webkit-input-placeholder
+				color: $gris
+			
+			&::-moz-placeholder
+				color: $gris
+			
+			&:-ms-input-placeholder
+				color: $gris
+			
+			&:-moz-placeholder
+				color: $gris	
+	
+	input[type="text"], input[type="email"]
+		width: 100%
+		height: 54px
+		display: block
+	
+	input[type="text"], input[type="email"], textarea
+		border: none
+		background-color: $gris3
+		font-size: 15px
+		font-family: $bitter
+		font-style: italic
+		width: 100%
+		padding: 0 10px
+		
+		&:focus
+			color: #fff
+			background-color: $bleu
+			
+			&::-webkit-input-placeholder,
+			&::-moz-placeholder,
+			&:-ms-input-placeholder,
+			&:-moz-placeholder
+				color: #fff	
+				
+	textarea
+		padding: 20px
+		resize: vertical
+		
+			
+			
+	#field_2_1, #field_2_2, #field_2_3
+		.gfield_label
+			position: absolute !important
+			top: -9999px !important
+			left: -9999px !important
+	
+	#field_2_4
+		padding: 0 20px 0 0
+	
+	#field_2_7
+		background-color: $gris5
+		padding: 0 20px 20px 20px
+		width: 100%
+		
+	.gfield_label
+		font-family: $bitter
+		padding: 20px 0 10px
+		display: block
+	
+	.gform_footer
+		margin: 25px 0 0 0
+	
+	#extensions_message_2_7
+		font-family: $bitter
+		font-style: italic
+		font-size: 12px
+			
+	#gform_submit_button_2
+		background-color: $gris3
+		border: none
+		padding: 17px 30px
+		display: inline-block
+		color: $gris
+		font-family: $bitter
+		font-style: italic
+	
+	//#choice_2_13_1
+		//position: static
+			
+#commentform
+	max-width: 950px
+	label[for="comment"]
+		display: block
+		font-family: 'bitter', serif
+		font-size: 14px
+		font-style: italic
+		&::after
+			content: "*:"
+			
+	textarea
+		width: 100%
+		background-color: $orange
+		border: 0
+		color: #fff
+		padding: 15px
+		resize: vertical
+		color: #fff
+		font-family: 'bitter', serif
+		font-style: italic
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-url
+		input
+			background-color: $orange
+			padding: 0 10px
+			border: none
+			display: block
+			height: 49px
+			width: 100%
+			color: #fff
+			font-family: 'bitter', serif
+			font-style: italic
+			
+			&::-webkit-input-placeholder
+			  color: #fff
+			  font-family: 'bitter', serif
+			  font-style: italic
+			&::-moz-placeholder
+			  color: #fff
+			  font-family: 'bitter', serif
+			  font-style: italic
+			&:-ms-input-placeholder
+			  color: #fff
+			  font-family: 'bitter', serif
+			  font-style: italic
+			&:-moz-placeholder
+			  color: #fff
+			  font-family: 'bitter', serif
+			  font-style: italic
+		label
+			position: absolute !important
+			top: -9999px !important
+			left: -9999px !important
+	
+	.form-submit
+		#submit
+			font-family: $bitter
+			//font-weight: bold
+			font-style: italic
+			padding: 0
+			display: block
+			width: 100%
+			border: none
+			color: #fff
+			background-color: $orange
+			height: 49px
+			line-height: 49px
+			
+@media screen and (min-width:740px)
+
+	#gform_wrapper_1
+		padding: 0 0 0 20px
+		max-width: 331px
+
+	#gform_wrapper_2
+		.gform_body
+			padding: 40px
+			
+		#gform_fields_2
+			display: flex
+			flex-flow: row wrap
+			
+			#field_2_1, #field_2_2, #field_2_3
+				flex: 1 0 33%
+			
+			#field_2_4
+				flex: 0 0 100%
+				.gfield_checkbox
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-between
+					margin: 0
+					> li
+						flex: 0 0 calc( 50% - 15px )
+						
+			#field_2_5
+				flex: 0 0 50%
+			
+			#field_2_6
+				flex: 0 0 100%
+			
+			#field_2_2
+				padding: 0 10px 10px
+				
+	#comment-fields-row
+		display: flex
+		flex-flow: row nowrap
+		justify-content: space-between
+		
+	#commentform
+		.comment-form-author,
+		.comment-form-email,
+		.comment-form-url
+			flex: 0 1 320px
+		
+		.comment-form-email
+			border-left: 10px $gris4 solid
+			border-right: 10px $gris4 solid
+		
+		.form-submit
+			#submit
+				width: auto
+				padding: 0 98px

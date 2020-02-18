@@ -1,0 +1,111 @@
+#main-nav
+	width: 320px
+	background-color: #fff
+	position: absolute
+	left: -320px
+	//top: 111px
+	top: 81px		
+	z-index: 15
+	transition: left 0.2s ease-out
+	padding: 0 0 20px 0
+	a
+		font-family: "roboto-condensed",sans-serif
+		font-style: normal
+		font-weight: 300
+		display: block
+		padding: 20px 20px
+		text-transform: uppercase
+		color: $gris
+		font-size: 17px
+		line-height: normal
+		transition: background-color .3s ease-out
+		
+		&:hover
+			background-color: $bleu
+			color: #fff
+	
+	li.has-children
+		ul
+			display: none
+
+	li.see-children
+		ul
+			display: block
+							
+	ul
+		background-color: $gris4
+		a
+			padding: 10px 20px 10px 40px
+			
+		ul
+			background-color: $gris3
+			a
+				padding: 10px 20px 10px 60px
+	
+	&.is-active
+		left: 0
+
+
+.single-post
+	#nav-articles
+		background-color: $gris2
+		
+.archive, .blog
+	#nav-articles
+		background-color: $gris4		
+		nav
+			a
+				color: $orange
+#nav-articles
+	margin: 0
+	nav
+		padding: 60px 0px
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		
+		a
+			display: flex
+			flex-direction: row
+			text-transform: uppercase
+			color: $orange
+			color: #fff
+			font-size: 12px
+			font-weight: 700
+						
+			span
+				display: block
+			
+			svg
+				fill: $orange
+
+			.icon-div
+				width: 68px
+				height: 23px
+				padding: 0 20px
+				
+			.text-div
+				.prev-article-link, .next-article-link
+					padding: 3px 0 0 0
+					
+				.prev-article-title, .next-article-title
+					padding: 0 0 0 0				
+					font-style: italic	
+					
+			&.next-article
+				text-align: right
+				.icon-div
+					order: 2
+				.text-div
+					order: 1
+
+
+@media screen and (min-width:745px)
+	#main-nav
+		top: 111px
+@media screen and (min-width:1024px)
+	#main-nav
+		//top: 124px
+
+	#nav-articles
+		margin: 0 -20px

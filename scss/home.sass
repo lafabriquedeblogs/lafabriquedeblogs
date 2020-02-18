@@ -1,0 +1,97 @@
+.home
+	.site-branding
+		//display: none
+	
+	#page
+		background-color: $gris5	
+	
+	#footer
+		.site-branding
+			display: block
+			
+h2.section-title			
+	@extend h1
+	font-size: 28px
+	letter-spacing: -1.2px
+			
+#positionnement
+	.inner-section
+		padding: 30px 40px
+	p
+		font-family: 'Bitter', serif;
+		font-weight: 700
+		font-size: 30px
+		text-align: center
+		line-height: 38px
+		max-width: 1120px
+		margin: 0 auto
+
+//#realisations
+
+#services, #blogue
+	background-color: #fff
+
+#home-services	
+	display: flex
+	flex-wrap: wrap
+	
+	a
+		color: $gris
+	
+	h3
+		font-family: $bitter
+		text-transform: none
+		letter-spacing: -1px
+		font-style: italic
+		font-weight: 700
+		color: $gris
+		font-size: 25px
+		
+.home-service--item
+	flex: 0 0 100%
+	
+	img
+		display: block
+		margin: 0 auto 20px
+		
+	.lire-la-suite
+		//text-indent: -999em
+		//&::before
+			
+		&:hover
+			background-image: url('../img/lire_la_suite_over.png')
+	p
+		//max-width: 227px
+		//margin: 0 auto 24px
+			
+@media screen and (min-width:660px)
+	#home-services
+		justify-content: space-between
+		
+	.home-service--item
+		flex: 0 0 calc( 50% - 20px )
+	
+@media screen and (min-width:740px)
+	
+	.home
+		.site-branding
+			display: block
+	
+	h2.section-title
+		font-size: 42px
+		letter-spacing: -2.2px
+				
+	#positionnement
+		.inner-section
+			padding: 80px 40px
+		p
+			font-size: 52px
+			line-height: 60px
+
+@media screen and (min-width:1130px)
+	#positionnement
+		.inner-section
+			padding: 100px 40px
+	
+	.home-service--item
+		flex: 0 0 calc( 25% - 20px )	

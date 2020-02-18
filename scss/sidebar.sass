@@ -1,0 +1,97 @@
+#secondary
+	max-width: $maxwidth_in
+	margin: 0 auto
+	padding: 0 30px	
+	clear: both
+	.widget
+		margin: 0 0 63px 0
+		font-size: 14px
+		line-height: 24px
+		
+		a
+			color: $orange
+			
+	h2
+		font-family: 'bitter', serif
+		font-size: 25px
+		font-weight: 700
+		color: $gris
+		text-transform: none
+		margin: 0 0 20px 0
+	
+#quaterly
+	&::after
+		content: ""
+		display: table
+		clear: both							
+
+#archives-2
+	label[for="archives-dropdown-2"]
+		position: absolute !important
+		top: -9999px !important
+		left: -9999px !important
+
+.wpp-meta, .post-stats
+	display: inline !important
+
+a.wpp-post-title
+	color: $gris !important	
+.wpp-views
+	color: $orange
+
+.comment-author-link
+	color: $gris
+	font-weight: 700
+
+.widget_categories
+	a
+		color: $gris !important
+
+
+@media only screen and (min-width:740px)
+	#secondary
+		padding: 0
+		#tertiary,
+		#quartely
+			width: 50%
+			float: left
+			padding: 0 30px
+		&::after
+			content: ""
+			display: table
+			clear: both			
+
+
+@media only screen and (min-width:1024px)
+	#secondary
+		width: 30%
+		float: right
+		clear: none
+		#tertiary,
+		#quartely
+			width: auto
+			float: none
+			padding: 0 30px
+
+
+@media only screen and (min-width:1288px)
+	#secondary
+		width: 35%
+		margin: 0
+		padding: 0 30px
+		
+		#tertiary,
+		#quartely
+			padding: 0
+		
+		
+		#sidebar-2,
+		#sidebar-3
+			//width: 50%
+			//float: left
+			//border: 1px red solid
+		
+		#sidebar-2
+			padding-right: 10px
+		#sidebar-3
+			padding-left: 10px

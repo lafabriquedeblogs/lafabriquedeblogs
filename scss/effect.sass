@@ -1,0 +1,44 @@
+@keyframes back-and-forth
+	0%
+		transform: scale(0,1)
+	50%
+		transform: scale(1,1)
+	100%
+		transform: scale(0,1)
+    
+
+.post-in-list
+	   
+	h2
+		&.effect
+			padding: 20px
+			border: 1px $bleu solid
+			&::after
+				content: ""
+				position: absolute
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+				width: 100%
+				height: 100%
+				transform-origin: left top
+				transform: scale(0,1)
+				background-color: $orange
+				
+	&:hover
+		h2
+			&.effect
+				border: 1px #fff solid
+				background-color: #fff
+				&::after
+					width: 100%
+					opacity: 1
+					animation: back-and-forth .4s linear
+				
+				a
+					color: #orange
+					position: relative
+					z-index: 1
+				
+			

@@ -1,0 +1,614 @@
+body
+	background-color: #fff
+	color: $gris
+	font-family: 'roboto', sans-serif
+	font-weight: 300
+	//-webkit-font-smoothing: antialiased
+	//-moz-osx-font-smoothing: grayscale
+	overflow-x: hidden
+	&.menu-active
+		#under-menu-active
+			display: block
+			opacity: .8
+			visibility: visible
+			transition: opacity 600ms ease-out
+			pointer-events: visible
+
+#under-menu-active
+	position: fixed
+	background: rgba(85,119,207,.8)
+	//background: rgba(0,0,0,.7)
+	background: linear-gradient(-90deg, $orange , $bleu 80%)
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	width: 100vw
+	height: 100vh
+	z-index: 14
+	opacity: 0
+	visibility: hidden
+	pointer-events: none
+			
+h1, h2, h3, h4
+	text-transform: uppercase
+	font-family: "roboto-condensed", sans-serif
+	font-style: normal
+	font-weight: 400
+	margin: 0 0 20px 0
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	color: $bleu
+
+h1
+	font-family: bitter, sans-serif
+	text-transform: none
+	font-size: 42px
+	line-height: normal
+	margin-bottom: 40px
+	letter-spacing: -2.2px
+	color: $gris1
+	font-weight: 700
+	
+		
+h2
+	font-size: 28px
+	line-height: 25px
+	
+	a
+		transition: color 0.2s ease-out
+		
+		&:hover
+			color: $gris1
+			
+
+a
+	text-decoration: none
+	color: $bleu
+	
+	&.lire-la-suite
+		display: inline-block
+		//text-indent: -999em
+		width: auto
+		height: 23px
+		background: url('../img/lire_la_suite.png') top left no-repeat
+		background-size: 28px 23px
+		font-size: 13px
+		padding: 2px 0 13px 33px
+		&:hover
+			background: url('../img/lire_la_suite_over.png') top left no-repeat
+			background-size: 28px 23px
+			
+a:hover
+	color: $orange
+	cursor: pointer
+
+p
+	line-height: 24px
+
+section
+	&::after
+		content: ""
+		display: table
+		clear: both
+			
+.bleu
+	color: $bleu !important
+
+.orange
+	color: $orange !important
+
+.vert
+	color: $vert !important
+
+.gris
+	color: $gris !important
+
+.blanc
+	color: #ffffff !important
+			
+.bc_gris_clair
+	background-color: $gris4 !important
+
+.bc_gris
+	background-color: $gris !important
+		
+.hel
+	font-family: 'helvetica neue', 'roboto', helvetica, sans-serif
+	
+.bold
+	font-weight: 700
+.light
+	font-weight: 300
+
+.logo-text-inline
+	padding: 0 10px
+	font-size: 80%
+	
+.inner-section
+	max-width: $maxwidth_in
+	margin: 0 auto
+	padding: 40px
+			
+.site
+	max-width: $maxwidth
+	margin: 0 auto
+	overflow-x: hidden
+	
+.site-content
+	position: relative
+
+.post-list--item
+	margin-bottom: 40px
+	h2.entry-title
+		a
+
+	&:nth-child(even)
+		h2.entry-title
+			a
+				color: $gris1
+				font-family: georgia, serif
+				text-transform: none
+				font-family: $bitter
+				font-weight: 700
+				font-style: italic
+				letter-spacing: -0.5px				
+				
+.feat-image-post-list
+	padding: 0 0 25px 0
+	img
+		display: block
+		margin: 0 auto
+
+.crayon
+	width: 11px
+	height: 11px
+
+.entry-author
+	font-family: 'bitter', sans-serif
+	font-size: 14px
+	color: $gris2
+	margin-bottom: 5px
+	
+.entry-date
+	font-size: 13px
+	font-weight: 700
+	color: $bleu
+
+.entry-categories
+	font-weight: 300
+	font-size: 13px
+	a
+		color: $gris
+		
+#page-template
+	.inner-section
+		//border: 1px #333 solid
+
+.single-template
+	.inner-section
+		//border: 1px red solid
+		padding: 0 30px
+		
+	h1
+		font-family: $font_title
+		font-weight: 300
+		text-transform: uppercase
+		color: $bleu
+		font-size: 48px
+		margin-bottom: 36px
+		&.entry-title
+			line-height: 48px
+			
+#header-page-section
+	//border: 1px green dotted
+	max-width: $maxwidth_in
+	margin: 0 auto
+	padding: 30px
+
+	p
+		display: none !important
+	
+	nav
+		font-family: $font_title
+		font-size: 14px
+		text-transform: uppercase
+		color: $gris
+		a
+			color: $gris
+		
+		span
+			color: $orange
+	h1
+		font-family: 'roboto-condensed', sans-serif
+		color: $bleu
+		font-size: 48px
+		line-height: 44px
+		font-weight: 300
+		text-transform: uppercase		
+		margin: 0
+		padding: 20px 0 30px
+
+.archive-template
+	#header-page-section
+		padding: 30px 0
+		
+article
+	.entry-meta			
+		margin-bottom: 36px
+	
+	&.article
+		padding-bottom: 80px
+
+.entry-content
+
+	h2
+		margin: 40px 0
+		line-height: 33px
+	
+	> h2
+		margin: 0 0 40px
+	
+	h3
+		color: $gris1
+		font-family: $bitter
+		margin-top: 50px
+	ul
+		//margin: 0 0 24px 20px
+		margin: 0
+		padding: 30px
+		background-color: #f9f9f9
+		border-left: 1px solid #ddd		
+	
+	li
+		line-height: 24px
+		margin-bottom: 10px
+		&::before
+			font-family: "Font awesome 5 pro"
+			font-weight: 300
+			content: "\f138"
+			padding-right: 5px
+
+#section-comments
+	background-color: $gris4
+	margin: 40px 0 0 0
+	padding: 0 30px 40px
+	
+	.inner-section
+		padding-top: 60px
+	
+	.comment
+		margin-bottom: 78px
+		
+		.children
+			margin-top: 78px
+		
+		#respond
+			background-color: #fff
+				
+	.comments-title, .no-comments, .comment-reply-title
+		font-family: 'bitter', sans-serif
+		font-size: 27px
+		font-style: italic
+		color: $orange
+		text-transform: none
+		margin: 0 0 53px 0
+	
+	.comment-author
+		font-family: 'bitter', sans-serif
+		font-size: 20px
+		
+		img
+			float: left
+			margin: 0 20px 20px 0
+			
+		.says
+			display: none !important
+		
+	.fn
+		a
+			color: $gris
+	
+	div.reply
+		a
+			color: $orange
+			font-weight: 700
+			font-size: 13px
+			font-family: 'bitter', serif
+			display: block
+			background: url(../img/lire_la_suite_over.png) right center no-repeat
+			background-size: 27px 23px
+			height: 23px
+			line-height: 23px
+			width: 95px
+	
+	#cancel-comment-reply-link
+		color: $orange
+		font-weight: 700
+		font-size: 13px
+		font-family: 'bitter', serif
+		text-transform: none		
+		padding-left: 10px
+		
+	.comment-meta
+		font-family: 'roboto-condenesed', sans-serif
+		text-transform: uppercase
+		font-size: 10px
+		font-weight: 700
+		padding-left: 10px
+	
+	.comment-content
+		font-size: 15px
+		font-weight: 400
+		max-width: 596px
+		
+	#respond
+		padding: 20px 0
+		margin: 20px 0
+	
+	.comment-list
+		//display: none
+
+//.services-content
+	//.entry-content
+		//ul
+			//margin: 0
+			//padding: 30px
+			//background-color: #f9f9f9
+			//border-left: 1px solid #ddd
+			
+.services-metas			
+	display: none
+
+.resultat
+    font-size: 22px
+    letter-spacing: normal
+
+.search-query
+    font-family: 'bitter', serif
+    text-transform: capitalize
+    letter-spacing: normal
+    font-size: 28px
+    color: #4d4d4d
+
+.post-list--search
+	align-items: stretch
+	align-content: center
+	padding-bottom: 2px
+	
+	.post-list--item
+		border: 1px solid $gris3
+		margin: 0 -1px -1px 0 !important
+		padding: 40px 20px
+		display: flex
+		align-items: center
+		position: relative
+		
+		h2
+			margin: 0 !important
+			
+		&:nth-child(even)
+			h2
+				font-family: 'bitter', sans-serif
+				text-transform: none
+				color: $gris
+				font-weight: 700
+				font-style: italic
+				
+		&:hover
+			background-color: $gris4
+		
+		&::after
+			content: "\f105"
+			font-family: "Font Awesome 5 Pro"
+			font-weight: 400
+			position: absolute
+			right: 10px
+			bottom: 10px
+
+.lfdb-button
+	display: inline-block
+	background: $orange
+	border-radius: 4px
+	padding: 10px 15px
+	color: #fff
+	font-style: normal
+	font-weight: 700
+	text-align: center
+	text-transform: uppercase
+	transition: background 300ms ease-out
+	&:hover
+		background: $gris
+		color: #fff
+	&.small
+		font-size: 13px
+		padding: 8px 12px
+	&.x-small
+		font-size: 10px
+		padding: 6px 10px
+	
+
+#lfdb-socials
+	padding: 10px 0 0 0
+					
+@media screen and (min-width:640px)
+	.post-list--item
+		//margin-bottom: 0
+	.archive-template
+		.post-list--item
+			margin-bottom: 40px
+	.services-content
+		h2, h3
+			max-width: 403px
+			&.full
+				max-width: none
+								
+@media only screen and (min-width:740px)
+	
+	#header-page-section
+		padding: 30px 40px
+	
+	.inner-section
+		padding: 80px 40px	
+	
+	.archive-template
+		.inner-section
+			padding: 20px 40px		
+	
+	#section-comments
+		.comment-content
+			padding-left: 88px
+		
+		div.reply
+			padding-left: 88px
+		
+		.comment
+			.children
+				margin-left: 88px	
+			
+			#respond
+				.comment-form-email
+					border-left: 10px #fff solid
+					border-right: 10px #fff solid
+	
+@media only screen and (min-width: 767px)
+	.services-content
+		display: flex
+		flex-wrap: nowrap
+		justify-content: space-between
+		align-items: flex-start
+		
+		.services-metas			
+			display: block
+			//padding-top: 40px
+			text-align: right	
+			flex: 0 0 23%
+			overflow: hidden
+			h4
+				font-family: $bitter
+				text-transform: Capitalize
+				letter-spacing: -2px
+				font-size: 40px
+				font-weight: bold
+				line-height: 37px
+				color: $gris2
+				word-wrap: break-word
+				word-break: break-word
+				overflow-wrap: break-word
+				
+			.service-image
+				display: block
+				margin: 20px 0 0 0
+						
+		.services-details
+			flex: 0 0 72%
+	
+		&.services-content-full
+			display: block
+			margin-top: 50px
+		
+@media only screen and (min-width:1024px)
+	body
+		margin: 0 20px
+	
+	#section-comments
+		margin: 0 -20px
+	
+	.archive-template
+		.inner-section
+			padding: 20px 40px
+			
+	#header-page-section
+		padding: 30px
+
+	.single-template
+		.inner-section
+			width: 70%
+			float: left
+
+@media only screen and (min-width:1130px)
+	.inner-section
+		padding: 80px 0
+	
+	#page-template, .archive-template
+		.inner-section
+			max-width: calc( 100% - ( 153px + 212px ))
+			padding: 0
+			margin: 0 0 0 180px
+
+					
+@media only screen and (min-width:1288px)
+
+	#page-template, .archive-template
+		.inner-section
+			margin: 0 0 0 154px
+				
+	#header-page-section
+		width: 60%
+		margin: 0 0 0 154px
+		padding: 0 0 0 47px
+		
+		p	
+			display: block !important
+			position: absolute
+			top: 0
+			left: -10px
+			font-family: $font_title
+			font-size: 122px
+			text-transform: uppercase
+			color: #f4f9f9
+			line-height: 100px
+			letter-spacing: -6px
+			margin: 0
+		
+		nav
+			padding: 59px 0
+			position: relative
+		
+		h1
+			position: relative	
+			padding: 42px 0 90px
+			margin: 0
+						
+	.single-template
+		.inner-section
+			width: 50%
+			margin: 0 0 0 153px
+			padding: 0 0 0 47px
+	
+	.archive-template
+		#header-page-section
+			margin: 0
+			padding: 0 0 0 47px
+			
+			nav
+				padding: 59px 0 0
+				
+	.entry-content
+		> h2
+			margin: 40px 0
+	.page-content
+		margin-left: 50px
+		
+	.services-content
+		.services-metas
+			padding-top: 40px
+									
+@media only screen and (min-width:2480px)
+	body
+		background-color: $bleu
+		
+	#page
+		background-color: #fff
+	
+	#section-comments
+		background-color: #fff
+	
+	#nav-articles
+		nav
+			max-width: 1366px
+			margin: 0 auto
+		
+	.single-post, .archive, .blog
+		#nav-articles
+			background-color: $bleu !important

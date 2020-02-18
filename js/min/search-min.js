@@ -1,0 +1,1 @@
+!function(n,c){n(c).ready(function(){n("#search-icon").on("click",function(){})})}(jQuery,document);

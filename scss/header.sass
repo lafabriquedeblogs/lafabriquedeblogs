@@ -1,0 +1,323 @@
+@import 'hamburgers/hamburgers'
+
+.masthead
+	display: flex
+	flex-wrap: wrap
+	align-items: center
+	background-color: #fff
+	
+.wrapper-hamburger
+	z-index: 20
+	flex: 0 0 80px
+	order: 1
+					
+.masthead
+	&::after
+		content: ""
+		display: table
+		clear: both
+
+.site-branding
+	flex: 2 0 auto
+	flex: 0 0 calc( 100% - 145px )
+	order: 2
+	font-size: 25px
+	padding: 0 0 0 0
+	z-index: 20
+
+#footer
+	.site-branding
+		z-index: 1
+				
+.wrapper-second-menu
+	display: none
+	order: 4
+	
+.wrapper-search
+	order: 3
+	flex: 0 0 40px
+	margin: 0 10px 
+	display: none
+	a
+		display: block
+		font-style: normal
+		font-weight: 700
+		color: $bleu
+		text-align: center
+		text-transform: uppercase
+		font-size: 15px	
+		height: 41px
+		line-height: 41px
+		border: 1px solid $bleu
+		border-radius: 4px
+		span
+			display: none
+		&::before
+			content: "\f002"
+			font-family: "Font Awesome 5 Pro"
+			font-weight: 300
+		&.open
+			&::before
+				content: "\f040"
+				font-family: "Font Awesome 5 Pro"
+				font-weight: 400
+				
+.wrapper-devis
+	flex: 0 0 50%
+	order: 4
+	background-color: $orange
+	
+.wrapper-phone	
+	flex: 0 0 50%
+	order: 5
+	background-color: $bleu
+
+
+
+.lafabrique
+	font-family: 'helvetica neue bold', helvetica, sans-serif
+	font-weight: 700
+	color: $gris
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+.parenthese
+	font-family: 'helvetica neue', helvetica, sans-serif
+	font-weight: 300
+	color: $gris
+
+.blogs-logo
+	font-family: 'helvetica neue', helvetica, sans-serif
+	font-weight: 300
+	font-size: 80%
+	padding: 0 10px
+	color: $bleu
+
+.menu-active
+	.lafabrique, .parenthese, .blogs-logo
+		color: #fff
+.devis
+	display: block
+	font-style: normal
+	font-weight: 700
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	font-size: 15px	
+	height: 55px
+	line-height: 55px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	&:hover
+		color:  #fff
+		
+.phone
+	display: block
+	font-family: "bitter", sans-serif
+	font-style: normal
+	font-weight: 700
+	color: #fff
+	text-align: center
+	font-size: 18px
+	cursor: pointer
+	height: 55px
+	line-height: 55px
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+	&:hover
+		color: #fff
+		
+.second-menu
+	display: flex
+	flex-wrap: nowrap
+	justify-content: flex-end
+	align-items: center
+	margin-right: 20px
+	
+	li
+		list-style-type: none
+		a
+			display: block
+			font-family: 'roboto-condensed',sans-serif
+			text-transform: uppercase
+			font-weight: 100
+			font-size: 15px
+
+
+#wrapper-searchform
+	padding: 20px
+	//background: $gris
+	background: linear-gradient(-90deg, #ff5000, #5475d2 80%)
+	border-bottom: 1px #fff solid
+	margin-top: -82px
+	opacity: 0
+	transition: all 300ms ease-out
+	form
+		div
+			overflow: hidden
+			input
+				width: 100%
+				border: none
+				background: #fff
+				height: 40px
+				padding: 0 20px
+				font-family: 'bitter',serif
+				font-style: italic
+				font-weight: 700
+				color: $orange
+				
+				&::-webkit-input-placeholder
+					color: $gris2
+					font-weight: 700
+					font-family: 'bitter',serif
+					font-style: italic
+				&::-moz-placeholder
+					color: $gris2
+					font-weight: 700
+					font-family: 'bitter',serif
+					font-style: italic
+
+				&:-ms-input-placeholder
+					color: $gris2
+					font-weight: 700
+					font-family: 'bitter',serif
+					font-style: italic
+
+				&:-moz-placeholder
+					color: $gris2
+					font-weight: 700
+					font-family: 'bitter',serif
+					font-style: italic
+			label
+				position: absolute
+				top: -999em
+				left: -999em
+	&.open
+		margin-top: 0
+		opacity: 1
+					
+#searchsubmit
+	float: right
+	width: 50px
+	height: 40px
+	border: 1px $gris solid
+	background: $gris
+	color: #fff
+	span
+		opacity: 0
+		visibility: hidden
+	&::before
+		content: "\f0fb"
+		font-family: "Font Awesome 5 Pro"
+		font-weight: 400
+		color: #fff
+		display: block
+		margin: 9px 0 0 0
+
+@media screen and (min-width:375px)		
+	.wrapper-search
+		display: block
+	
+@media screen and (min-width:600px)
+	.site-branding
+		font-size: 30px
+
+@media screen and (min-width:825px)
+
+	.masthead
+		flex-wrap: nowrap
+		align-items: center
+		justify-content: space-between
+
+	.hamburger
+		width: auto
+		background-color: $bleu
+		
+		.hamburger-label
+			color: #fff
+		
+		.hamburger-inner
+			&, &::before, &::after
+				background-color: #fff
+		
+		&.is-active
+			.hamburger-label
+				color: #fff
+					 	
+	.wrapper-hamburger
+		order: 1
+		flex: 0 0 160px
+		
+	.site-branding
+		order: 2
+		padding: 0
+		flex: 2 0
+		a
+			padding-left: 20px
+			margin-left: 0
+	
+	.wrapper-search					
+		order: 6
+		flex: 0 0 40px
+		margin: 0 20px 0 0
+		
+	.wrapper-second-menu
+		order: 3
+		flex: 2 0 
+	
+	.wrapper-devis
+		flex: 0 0 160px
+		order: 4
+		height: 41px
+		border-radius: 4px
+		margin-right: 2px
+		&:hover
+			border-radius: 1px
+			background: $orange2
+	.devis
+		height: auto
+		line-height: 41px
+		font-size: 14px
+		
+		
+	.wrapper-phone
+		order: 5
+		flex: 0 0 160px
+		height: 41px
+		border-radius: 4px
+		margin-right: 2px
+		&:hover
+			border-radius: 1px
+			background: $bleu2
+	.phone
+		height: auto
+		line-height: 41px
+		font-size: 16px
+										
+@media screen and (min-width:1210px)
+	.hide-large
+		display: none
+			
+	.wrapper-hamburger
+		order: 1
+	
+	.site-branding
+		order: 2
+	
+	.wrapper-second-menu
+		display: block
+		order: 3
+	
+	.wrapper-devis
+		order: 4
+			
+	.wrapper-phone
+		order: 5
+
+@media screen and (min-width:1288px)
+	.wrapper-hamburger
+		flex: 0 0 156px
+
+	.site-branding
+		a
+			padding-left: 47px
