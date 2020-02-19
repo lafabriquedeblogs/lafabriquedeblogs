@@ -24,6 +24,9 @@ get_header();
 				
 				<div id="home-services">
 					<div class="home-service--item">
+						<div class="icon-expertise">
+							<img src="/wp-content/uploads/2020/01/type_de_site.png" width="" height="" alt="graphic icons Type de site"/>
+						</div>
 						<a href="/site-wordpress">
 							<h3>Type de site</h3>
 							<p>Vous souhaitez lancer votre activité et augmenter votre visibilité en ligne ? La création d’un site WordPress est un excellent moyen pour représenter votre entreprise sur le web.</p>
@@ -33,6 +36,9 @@ get_header();
 						</footer>
 					</div><!-- .home-service--item -->
 					<div class="home-service--item">
+						<div class="icon-expertise">
+							<img src="/wp-content/uploads/2020/01/services.png" width="" height="" alt="graphic icons Type de site"/>
+						</div>
 						<a href="/agence-web-montreal">
 							<h3>Services</h3>
 							<p>Vous prévoyez le lancement de votre site web prochainement ? Vous aimeriez que votre entreprise ait une présence en ligne optimale afin d’obtenir rapidement du trafic sur votre site ? </p>
@@ -42,6 +48,9 @@ get_header();
 						</footer>
 					</div><!-- .home-service--item -->
 					<div class="home-service--item">
+						<div class="icon-expertise">
+							<img src="/wp-content/uploads/2020/01/fonctionnalites.png" width="" height="" alt="graphic icons Type de site"/>
+						</div>
 						<a href="/conception-web-wordpress">
 							<h3>Fonctionnalités</h3>
 							<p>Votre site WordPress est en préparation ? Que direz-vous de profiter des fonctionnalités infinies offertes par le CMS ?</p>
@@ -51,6 +60,9 @@ get_header();
 						</footer>
 					</div><!-- .home-service--item -->
 					<div class="home-service--item">
+						<div class="icon-expertise">
+							<img src="/wp-content/uploads/2020/01/expertise.png" width="" height="" alt="graphic icons Type de site"/>
+						</div>
 						<a href="/specialiste-wordpress">
 							<h3>Expertise Wordpress</h3>
 							<p>La conception de votre site WordPress vous semble complexe ? Vous n’êtes pas en mesure de créer l’apparence visuelle de votre site et de la rendre unique ?</p>
