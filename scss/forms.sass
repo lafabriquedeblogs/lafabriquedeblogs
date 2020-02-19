@@ -256,7 +256,141 @@ select
 	
 	//#choice_2_13_1
 		//position: static
+
+#gform_wrapper_3
+	
+	.gform_body
+		padding: 20px
+		background-color: $gris6
+	ul
+		margin: 0
+		padding: 0
+		
+		&.gfield_checkbox
 			
+			li
+				padding: 0 0 10px 0
+			
+			input[type="checkbox"]
+				position: absolute !important
+				top: -9999px !important
+				left: -9999px !important
+				
+			label[id*="label_3_4_"], label[id*="label_3_9_"], label[id*="label_3_21_"], label[id*="label_3_23_"]
+				position: relative
+				padding-left: 30px
+				cursor: pointer
+				font-family: $bitter
+				font-size: 0.900em
+				
+				&::before
+					content: " "
+					display: block
+					width: 24px
+					height: 24px
+					background-color: $gris3
+					border-radius: 15px
+					border: 4px $gris3 solid
+					position: absolute
+					left: 0
+					top: -2px
+					transition: all 300ms ease-out
+					
+				&.selected
+					font-family: $bitter
+					color: $orange
+					font-style: italic
+					font-size: 16px
+					
+					&::before
+						background-color: #fff
+						border: 4px $orange solid
+						
+	li
+		padding: 0 0 10px 0
+		
+		input
+			&::-webkit-input-placeholder
+				color: $gris
+			
+			&::-moz-placeholder
+				color: $gris
+			
+			&:-ms-input-placeholder
+				color: $gris
+			
+			&:-moz-placeholder
+				color: $gris	
+	
+	input[type="text"], input[type="email"], input[type="tel"]
+		width: 100%
+		height: 54px
+		display: block
+	
+	input[type="text"], input[type="tel"], input[type="email"], textarea
+		border: none
+		background-color: $gris3
+		font-size: 15px
+		font-family: $bitter
+		font-style: italic
+		width: 100%
+		padding: 0 10px
+		
+		&:focus
+			color: #fff
+			background-color: $bleu
+			
+			&::-webkit-input-placeholder,
+			&::-moz-placeholder,
+			&:-ms-input-placeholder,
+			&:-moz-placeholder
+				color: #fff	
+				
+	textarea
+		padding: 20px
+		resize: vertical
+	
+	.gfield_label
+		font-family: $bitter
+		padding: 20px 0 0px
+		display: block
+		font-size: 0.7em
+	
+	.gfield_html
+		font-size: 0.850em
+		line-height: 1.3
+		margin: 20px 0
+		
+	.gform_footer
+		margin: 25px 0 0 0
+	
+	.ginput_container_fileupload
+		display: flex
+		flex-direction: column
+	
+	#extensions_message_3_7
+		display: block
+		font-size: 0.750em
+		padding: 5px 0 0 0
+	
+	#input_3_7
+		font-family: $bitter
+		font-size: 0.900em
+			
+	#gform_submit_button_3
+		background-color: $gris3
+		border: none
+		padding: 17px 30px
+		display: inline-block
+		color: $gris
+		font-family: $bitter
+		font-style: italic				
+
+.no_label
+	.gfield_label
+		position: absolute
+		left: -999em
+					
 #commentform
 	max-width: 950px
 	label[for="comment"]
@@ -382,3 +516,29 @@ select
 			#submit
 				width: auto
 				padding: 0 98px
+
+@media screen and (min-width:768px)
+	#gform_wrapper_3
+		#gform_fields_3
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			
+			& > li
+				flex: 0 0 1
+				width: calc( 50% - 10px )
+				
+				&#field_3_3,
+				&#field_3_4,
+				&#field_3_5,
+				&#field_3_19,
+				&#field_3_6,
+				&#field_3_7,
+				&#field_3_20,
+				&#field_3_21,
+				&#field_3_22,
+				&#field_3_23,
+				&#field_3_24,
+					flex: 0 0 100%
+						
+			
