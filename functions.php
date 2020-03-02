@@ -167,7 +167,7 @@ function lafabriquedeblogs_scripts() {
 	
 	wp_deregister_script( 'wp-embed' );
 	 
-	wp_enqueue_style( 'lafabriquedeblogs-font-awesome', 'https://pro.fontawesome.com/releases/v5.6.3/css/all.css');
+	//wp_enqueue_style( 'lafabriquedeblogs-font-awesome', 'https://pro.fontawesome.com/releases/v5.6.3/css/all.css');
 	wp_enqueue_style( 'lafabriquedeblogs-style-main', get_stylesheet_directory_uri().'/css/main.css');
 	
 	wp_enqueue_script( 'lafabriquedeblogs-app', get_stylesheet_directory_uri().'/js/min/app-min.js',array('jquery'), null,true );
@@ -189,7 +189,7 @@ function add_font_awesome_5_cdn_attributes( $html, $handle ) {
     }
     return $html;
 }
-add_filter( 'style_loader_tag', 'add_font_awesome_5_cdn_attributes', 10, 2 );
+//add_filter( 'style_loader_tag', 'add_font_awesome_5_cdn_attributes', 10, 2 );
 
 
 function lafabriquedeblogs_head(){

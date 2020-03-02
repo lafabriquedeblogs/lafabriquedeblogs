@@ -25,7 +25,7 @@
 			<nav id="social-logos">
 				<a href="http://www.facebook.com/pages/La-Fabrique-de-Blogs/11175663812?ref=ts" target="_blank" class="facebook"><span>facebook</span></a>
 				<a href="https://twitter.com/FabriqueDeBlogs" target="_blank" class="twitter"><span>twitter</span></a>
-				<a href="https://plus.google.com/114598916532861308946/posts" target="_blank" class="google"><span>google</span></a>
+				<a href="https://www.google.com/maps/place/La+Fabrique+de+Blogs/@45.5230977,-73.583539,17z/data=!4m5!3m4!1s0x4cc91bcb8f86185b:0x2fbcd766b4e1e76f!8m2!3d45.523094!4d-73.581345" target="_blank" class="google"><span>google</span></a>
 				<a href="http://www.linkedin.com/company/la-fabrique-de-blogs" target="_blank" class="linkedin"><span>linkedin</span></a>
 				<a href="https://instagram.com/fabriquedeblogs/" target="_blank" class="instagram"><span>instagram</span></a>
 				<a href="http://feeds.feedburner.com/LaFabriqueDeBlogs" target="_blank" class="rss"><span>rss</span></a>
